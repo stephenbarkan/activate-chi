@@ -8,9 +8,9 @@ summary: >
   We're keeping track of the federal government's progress acting upon the Biden
   campaign's first 100 days promises! Follow along and see how you can help hold
   them accountable.
-moreInfo: https://activate-chi.org/biden-tracker
+moreInfo: /biden-tracker
 links:
   - external: false
     label: See the promise tracker
-    url: https://activate-chi.org/biden-tracker
+    url: /biden-tracker
 ---

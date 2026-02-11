@@ -96,6 +96,7 @@ module.exports = {
         lg: "32rem",
         xl: "36rem",
         full: "100%",
+        px: "1px",
       },
       zIndex: {
         "-1": "-1",

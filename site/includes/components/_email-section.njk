@@ -3,17 +3,17 @@
 <div id="email" class="relative">
     <div class="grid items-center p-8 border gap-y-6 gap-x-12 lg:grid-cols-3 border-hue border-opacity-60 bg-opacity-2 bg-hue">
         <h2 class="text-lg text-center lg:text-left">Join our email list to be notified about our future initiatives.</h2>
-        <div id="mc_embed_signup" class="lg:col-span-2">
+        <div id="mc_embed_signup" class="grid lg:col-span-2">
             <form  x-data="{val: ''}"
-                class="flex flex-col items-stretch space-y-2 col-span-full" action="https://activate-chi.us10.list-manage.com/subscribe/post?u=60a2dedaa48e24b5497be5707&amp;id=9a1d15b8b7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div class="flex items-center self-stretch border divide-x divide-white border-opacity-60 bg-opacity-60 divide-opacity-25 focus-within:bg-opacity-100 hover:bg-opacity-100 bg-gray border-hue focus-within:ring">
+                class="flex flex-col items-stretch space-y-2 overflow-hidden col-span-full" action="https://activate-chi.us10.list-manage.com/subscribe/post?u=60a2dedaa48e24b5497be5707&amp;id=9a1d15b8b7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div class="flex flex-col items-center self-stretch border divide-y divide-white md:divide-y-0 md:divide-x md:flex-row border-opacity-60 bg-opacity-60 divide-opacity-25 focus-within:bg-opacity-100 hover:bg-opacity-100 bg-gray border-hue focus-within:ring">
                     {# email field #}
-                    <label for="mce-EMAIL" class="flex items-baseline flex-1 px-6 py-4 space-x-4 text-2xl leading-none tracking-wide">
+                    <label for="mce-EMAIL" class="flex flex-col items-baseline flex-1 w-full px-6 py-4 text-2xl leading-none tracking-wide md:space-x-4 md:flex-row md:w-auto">
                         <span class="pt-1 text-base leading-tight tracking-wider text-white text-opacity-75">Your email:</span>
-                        <input x-model="val" id="mce-EMAIL" name="EMAIL" type="email" class="flex-1 block overflow-x-auto text-lg tracking-wide rounded-none font-display required focus:outline-none bg-none">
+                        <input x-model="val" id="mce-EMAIL" name="EMAIL" type="email" class="flex-1 flex-shrink block overflow-x-auto text-lg tracking-wide rounded-none font-display required focus:outline-none bg-none min-w-px">
                     </label>
                     {# submit button #}
-                    <label for="mce-SUBMIT" class="flex items-center pl-2 pr-4 md:pl-4">
+                    <label for="mce-SUBMIT" class="flex items-center w-full pl-2 pr-4 md:pl-4 md:w-auto">
                         <div class="relative p-3 text-opacity-25 rounded-full cursor-pointer focus-within:ring">
                             <input id="mce-SUBMIT"  x-bind:disabled="val.length === 0" class="absolute inset-0 bg-none" type="submit" value=""></input>
                             <span class="block w-4 h-4 text-white" :class="{'text-opacity-100': val.length > 0, 'text-opacity-25': val.length === 0}">{% include "img/arrowRight.svg" %}</span>
